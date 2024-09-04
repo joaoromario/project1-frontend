@@ -1,3 +1,4 @@
+import { Button } from "../../components/Button/Button";
 import "./Login.scss";
 
 const BASE_CLASS = "login";
@@ -14,7 +15,7 @@ export function Login() {
           <form action="post">
             <input type="email" placeholder="Email address" />
             <input type="password" placeholder="Password" />
-            <button>Sign in</button>
+            <Button text="Sing In" />
           </form>
         </div>
       </div>

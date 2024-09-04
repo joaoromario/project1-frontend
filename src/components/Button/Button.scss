@@ -1,0 +1,11 @@
+@import "../../styles/partials/variables";
+
+button {
+  background-color: $--color-primary;
+  outline: none;
+  border: none;
+  padding: 8px;
+  border-radius: 7px;
+  color: $--color-bg-light;
+  font-weight: bold;
+}
