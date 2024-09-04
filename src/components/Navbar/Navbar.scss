@@ -1,0 +1,32 @@
+@import "/src/styles/partials/variables";
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  background-color: $--color-text-main;
+
+  &__logo {
+    display: flex;
+    color: $--color-primary;
+    align-items: center;
+    padding: 10px;
+    img {
+      width: 50px;
+      filter: $--color-accent(100%);
+      margin-right: 10px;
+      background-color: transparent;
+    }
+  }
+  &__items {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    margin-right: 20px;
+
+    ul {
+      display: flex;
+      gap: 20px;
+      color: $--color-bg-secondary;
+    }
+  }
+}
