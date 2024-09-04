@@ -1,0 +1,11 @@
+@import "../../styles/partials/variables";
+
+.reservation {
+  background-color: $--color-bg-secondary;
+  margin: auto;
+  height: 100%;
+  display: flex;
+  label {
+    text-align: start;
+  }
+}
