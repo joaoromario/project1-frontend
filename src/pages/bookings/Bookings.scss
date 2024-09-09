@@ -1,0 +1,71 @@
+@import "/src/styles/partials/variables";
+
+.bookingsPageWrapper {
+  margin: 20px;
+  padding: 20px;
+  background-color: $--color-bg-secondary;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  align-items: center;
+  max-width: 1000px;
+  margin-bottom: 10px;
+
+  .btnWrapper {
+    display: flex;
+    gap: 10px;
+
+    .filterBtn {
+      color: $--color-text-main;
+      background-color: transparent;
+      outline: 1px solid lightgray;
+    }
+  }
+}
+
+.bookingSearchBar {
+  max-width: 1000px;
+  margin: auto;
+  width: 100%;
+  input {
+    width: 100%;
+    border: 1px solid $--color-border-secondary;
+    padding: 5px;
+    border-radius: 3px;
+    margin-bottom: 10px;
+  }
+}
+
+.bookings {
+  max-width: 1000px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  // padding: 10px;
+  text-align: left;
+  ul {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    width: 100%;
+    .bookingList,
+    .bookingListHeader {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 80px;
+      padding: 10px;
+    }
+    .bookingList {
+      color: $--color-text-main;
+    }
+  }
+}
+
+.bookingListHeader {
+  background-color: $--color-border-secondary;
+  color: $--color-bg-light;
+}

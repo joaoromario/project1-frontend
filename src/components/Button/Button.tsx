@@ -2,8 +2,9 @@ import "./Button.scss";
 
 type Props = {
   text: string;
+  classProp?: string;
 };
 
-export function Button({ text }: Props) {
-  return <button>{text}</button>;
+export function Button({ text, classProp }: Props) {
+  return <button className={classProp}>{text}</button>;
 }
