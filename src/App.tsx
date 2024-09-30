@@ -1,7 +1,8 @@
 import "./App.scss";
 import { Navbar } from "./components/Navbar/Navbar";
 import { Bookings } from "./pages/bookings/Bookings";
-import FinancialManagement from "./pages/financialManagement/FinancialManagement";
+import Expenses from "./pages/financialManagement/Expenses";
+import Revenue from "./pages/financialManagement/Revenue";
 import { Login } from "./pages/loginPage/login";
 import { Register } from "./pages/registerPage/Register";
 import { Reservation } from "./pages/Reservation/Reservation";
@@ -13,8 +14,9 @@ function App() {
       {/* <Login /> */}
       {/* <Reservation /> */}
       {/* <Register /> */}
-      <Bookings />
-      {/* <FinancialManagement /> */}
+      {/* <Bookings /> */}
+      {/* <Revenue /> */}
+      <Expenses />
     </>
   );
 }

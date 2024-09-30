@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./FinancialManagement.scss";
 
-const FinancialManagement = () => {
+const Revenue = () => {
   const [formData, setFormData] = useState({
     amount: "",
     date: "",
@@ -83,4 +83,4 @@ const FinancialManagement = () => {
   );
 };
 
-export default FinancialManagement;
+export default Revenue;
