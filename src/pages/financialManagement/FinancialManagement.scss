@@ -1,0 +1,113 @@
+@import "/src/styles/partials/variables";
+
+.financial-management {
+  background-color: #e6f3f8;
+  padding: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+  h1 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+
+  .tabs {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+
+    .tab {
+      background-color: #374151;
+      color: white;
+      border: none;
+      padding: 0.75rem 1.5rem;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      border-radius: 8px;
+
+      &:hover {
+        background-color: #475569;
+      }
+
+      &.active {
+        background-color: $--color-primary;
+      }
+
+      &:not(:last-child) {
+        margin-right: 1rem;
+      }
+    }
+  }
+
+  .form-container {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+    h2 {
+      margin-bottom: 0.5rem;
+      color: #374151;
+    }
+
+    p {
+      margin-bottom: 1.5rem;
+      color: #6b7280;
+    }
+
+    form {
+      .form-group {
+        margin-bottom: 1.5rem;
+
+        label {
+          display: block;
+          margin-bottom: 0.5rem;
+          font-weight: 500;
+          color: #374151;
+        }
+
+        input,
+        textarea {
+          width: 100%;
+          padding: 0.75rem;
+          border: 1px solid #d1d5db;
+          border-radius: 4px;
+          font-size: 1rem;
+          color: #374151;
+
+          &:focus {
+            outline: none;
+            border-color: #f97316;
+            box-shadow: 0 0 0 3px rgba(249, 115, 23, 0.3);
+          }
+
+          &::placeholder {
+            color: #9ca3af;
+          }
+        }
+
+        textarea {
+          resize: none;
+          height: 100px;
+        }
+      }
+
+      .submit-btn {
+        background-color: $--color-primary;
+        color: white;
+        padding: 0.75rem 2rem;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 1rem;
+        transition: background-color 0.3s ease;
+
+        &:hover {
+          background-color: #fb923c;
+        }
+      }
+    }
+  }
+}

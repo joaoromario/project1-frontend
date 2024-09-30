@@ -1,9 +1,14 @@
 @import "/src/styles/partials/variables";
 
 .bookingsPageWrapper {
-  margin: 20px;
   padding: 20px;
   background-color: $--color-bg-secondary;
+  background-color: #e6f3f8;
+  padding: 2rem;
+  max-width: 1000px;
+  margin: 20px auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 header {

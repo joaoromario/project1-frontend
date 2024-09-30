@@ -1,2 +1,6 @@
 @import "partials/base";
 @import "partials/variables";
+
+html {
+  background-color: $--color-bg-secondary;
+}
